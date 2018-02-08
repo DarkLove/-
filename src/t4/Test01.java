@@ -52,13 +52,21 @@ public class Test01{
 		String s3 = "a" + "b";
 		System.out.println(s2 == "ab");
 		System.out.println(s3 == "ab");
-		
-		
-		 
-		
-		
-		
+		  
 	}
 	
+	@Test
+	public void test5(){
+		System.out.println("The name of class Foo is: "+Test01.class.getName()); 
+	}
 	
+	@Test
+	public void test6() { 
+		new Thread(() -> {
+			System.out.println("gogogo");
+			System.out.println("gogogo");
+		}).start();
+		 
+	}
+	   
 }
